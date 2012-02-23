@@ -1,6 +1,6 @@
 require 'correios-frete'
 
-class Shipping::Base < Calculator
+class Shipping::Base < Spree::Calculator
   preference :zipcode, :string
   preference :default_weight, :float, :default => 1
 
