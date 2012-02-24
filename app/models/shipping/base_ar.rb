@@ -33,7 +33,7 @@ class Shipping::BaseAR < Shipping::Base
   def encontra_pedido(object)
     if object.is_a?(Array)
       order = object.first.order
-    elsif object.is_a?(Shipment)
+    elsif object.is_a?(Spree::Shipment)
       order = object.order
     else
       order = object
