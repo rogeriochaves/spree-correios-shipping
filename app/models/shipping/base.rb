@@ -6,7 +6,7 @@ class Shipping::Base < Spree::Calculator
 
   def self.register
     super
-    Spree::ShippingMethod.calculators << self
+    Spree::ShippingMethod.calculators << self if !Spree::ShippingMethod.calculators.include?(self)
   end
 
   def compute(object)
