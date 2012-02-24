@@ -9,4 +9,4 @@ Instalacão
 
 No seu Gemfile apenas adicione:
 
-gem "spree_correios_shipping", :git => "git://github.com/vintem/spree-correios-shipping.git"
+gem "spree_correios_shipping", :git => "git://github.com/rogeriochaves/spree-correios-shipping.git"
