@@ -1,5 +1,4 @@
 require 'spree_core'
-require 'spree_correios_shipping_hooks'
 
 module SpreeCorreiosShipping
   class Engine < Rails::Engine
