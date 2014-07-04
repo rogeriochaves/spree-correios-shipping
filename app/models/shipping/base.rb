@@ -40,8 +40,6 @@ class Shipping::Base < Spree::Calculator
   def encontra_pedido(object)
     if object.is_a?(Array)
       order = object.first.order
-    elsif object.is_a?(Spree::Shipment)
-      order = object.order
     else
       order = object
     end
